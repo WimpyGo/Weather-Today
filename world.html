@@ -27,6 +27,15 @@
 </head>
 
 <body>
+  <script>
+  (function(){
+    var fullres = document.createElement('script');
+    fullres.async = true;
+    fullres.src = 'https://t.fullres.net/weather24.js?'+(new Date()-new Date()%43200000);
+    document.head.appendChild(fullres);
+  })();
+</script>
+
   <div class="pc">
     <!-- nav section -->
     <nav>
